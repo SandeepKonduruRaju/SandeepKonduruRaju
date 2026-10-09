@@ -1,29 +1,37 @@
-## Hi, I'm Sandeep
+<h2>Hi, I'm Sandeep 👋</h2>
+
+<p>
+  <a href="https://sandeepraju.dev"><img src="https://img.shields.io/badge/Portfolio-sandeepraju.dev-24614b?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/sandeepkraju-softwareengineer/"><img src="https://img.shields.io/badge/LinkedIn-Sandeep_Konduru_Raju-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:sandeep.kondururaju@gmail.com"><img src="https://img.shields.io/badge/Email-sandeep.kondururaju@gmail.com-555?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <img src="https://img.shields.io/badge/Dublin-Available_now-2e9b6a?style=flat-square" alt="Dublin, available now" />
+</p>
 
 I'm a backend and AI engineer based in Dublin. I spent 4 years at Manhattan Associates building the Java and Spring Boot services behind a warehouse platform that handles 10M+ transactions a day, for retail clients in Europe and the US. I was on call for it too, so I care a lot about things not breaking at 3am.
 
-Near the end of that job I helped build MAKI, an internal multi-agent coding tool, and built the evaluation harness that checked its output before production. That got me into AI properly. I'm now finishing an MSc in Artificial Intelligence at National College of Ireland (Dec 2026) and building agent projects on the side.
+Near the end of that job I helped build MAKI, an internal multi-agent coding tool, and built the evaluation harness that checked its output before production. That got me into AI properly. I'm now finishing an MSc in Artificial Intelligence at National College of Ireland (Dec 2026).
 
-Open to backend, platform and AI engineering roles in Dublin. I can start now.
+### 📊 Work in numbers
 
-### What I'm working on
+| 10M+ | 99.5% | 15K+ | 100+ |
+|:---:|:---:|:---:|:---:|
+| transactions a day | availability | requests a second | production incidents fixed |
 
-**[AI Incident Investigation Platform](https://github.com/SandeepKonduruRaju/ai-incident-platform)**
+### 🛠️ What I'm building
 
-Helps engineers find the cause of a production incident faster. A Java 17/Spring Boot API tracks incidents and sends them over Kafka to a Python/FastAPI service, where a LangGraph workflow searches runbooks with RAG (pgvector) and suggests likely causes, with links to its sources. PostgreSQL, Redis, OAuth2 and JWT, OpenTelemetry, Terraform for AWS.
+**🔎 [AI Incident Investigation Platform](https://github.com/SandeepKonduruRaju/ai-incident-platform)** (in progress)
 
-**Dublin Transit AI** (in development)
+A tool to help engineers find the cause of a production incident faster. Built so far: a Java 17 / Spring Boot incident service with PostgreSQL, JPA, Flyway migrations and integration tests. Next: Kafka events to a Python FastAPI service where a LangGraph workflow searches runbooks with RAG.
 
-An assistant that answers questions about Dublin buses using live NTA GTFS-Realtime data, like "when is the next 46A?" or "how reliable was this route this week?". LangGraph agents, RAG, an MCP server, and a 100 question eval set that runs in CI.
+**🚌 Dublin Transit AI** (in development)
 
-### Tools I use most
+An assistant that answers questions about Dublin buses using live NTA GTFS-Realtime data, like "when is the next 46A?". LangGraph agents, RAG, an MCP server, and a 100 question eval set in CI.
 
-- **Backend:** Java 17, Spring Boot, Hibernate, Python, FastAPI, Go, SQL
-- **Data:** MySQL, PostgreSQL, Redis, Kafka, RabbitMQ
-- **Cloud:** Docker, Kubernetes, Terraform, AWS, Jenkins, GitHub Actions
-- **AI:** LangChain, LangGraph, RAG, pgvector, MCP
-- **Monitoring:** OpenTelemetry, Prometheus, Grafana
+### 🧰 Tools I use
 
-### Get in touch
+<p>
+  <img src="https://skillicons.dev/icons?i=java,spring,python,fastapi,go,mysql,postgres,redis,kafka,rabbitmq&theme=light" alt="Backend and data" /><br />
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,aws,jenkins,githubactions,linux,grafana,prometheus,git&theme=light" alt="Cloud and delivery" />
+</p>
 
-[LinkedIn](https://www.linkedin.com/in/sandeepkraju-softwareengineer/) · [Portfolio](https://sandeepraju.dev) · sandeep.kondururaju@gmail.com
+AI: LangChain, LangGraph, RAG, pgvector, MCP, agent evaluation
