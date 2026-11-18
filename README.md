@@ -19,13 +19,13 @@ Near the end of that job I helped build MAKI, an internal multi-agent coding too
 
 ### 🛠️ What I'm building
 
-**🔎 [AI Incident Investigation Platform](https://github.com/SandeepKonduruRaju/ai-incident-platform)** (in progress)
+**🚌 [Dublin Transit AI](https://github.com/SandeepKonduruRaju/Dublin-Transit-AI)** (live: [try it](https://dublin-transit-ai.swedencentral.cloudapp.azure.com))
 
-A tool to help engineers find the cause of a production incident faster. Built so far: a Java 17 / Spring Boot incident service with PostgreSQL, JPA, Flyway migrations and integration tests. Next: Kafka events to a Python FastAPI service where a LangGraph workflow searches runbooks with RAG.
+Ask Dublin bus questions in plain English, like "is the 39A running late?" or "how reliable was route 15 this week?". A poller saves the NTA live feed to Postgres every minute, FastAPI tools join it to the national timetable, and a LangGraph agent with Claude answers only from those tools. A 100 question eval with a 100% safety gate runs in GitHub Actions, so the agent never makes up routes. Runs on Azure with Docker Compose and Caddy.
 
-**🚌 Dublin Transit AI** (in development)
+**🔎 [AI Incident Investigation Platform](https://github.com/SandeepKonduruRaju/ai-incident-platform)** (v1.0.0: [demo](https://incident.sandeepraju.dev))
 
-An assistant that answers questions about Dublin buses using live NTA GTFS-Realtime data, like "when is the next 46A?". LangGraph agents, RAG, an MCP server, and a 100 question eval set in CI.
+Helps engineers find the root cause of a production incident faster. A Spring Boot API sends events through an outbox to Kafka, and a Python LangGraph worker runs hybrid RAG with Claude and returns a cited root cause, or says it isn't sure. On a 28 case eval: 89% root cause accuracy and 100% valid citations.
 
 ### 🧰 Tools I use
 
